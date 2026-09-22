@@ -26,6 +26,7 @@ public class Hunter extends GamePiece implements Moveable {
 	@Override
 	public void move(Drawable[] gameBoard, int playerLocation) {
 		//Hunter cannot move past rocks, and hunter moves towards player
+		//moving left
 		if (playerLocation > this.getLocation()) {
 			if (this.getLocation() < gameBoard.length && (gameBoard[this.getLocation() +1] == null)) {
 				gameBoard[getLocation()] = null;
@@ -33,7 +34,7 @@ public class Hunter extends GamePiece implements Moveable {
 				gameBoard[getLocation()] = this;
 			}
 			
-		}
+		} //moving right
 		else if (playerLocation < super.getLocation()) {
 			if (getLocation() > 0 && (gameBoard[this.getLocation() -1] == null)) {
 				gameBoard[getLocation()] = null;

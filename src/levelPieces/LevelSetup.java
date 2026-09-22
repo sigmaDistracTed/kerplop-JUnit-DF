@@ -23,7 +23,7 @@ public class LevelSetup {
 			levelInteractingPieces = new ArrayList<GamePiece>();
 			levelMovingPieces = new ArrayList<Moveable>();
 			levelGameBoard[3] = new Rock(3);
-			levelGameBoard[4] = new Hunter(4);
+			levelGameBoard[4] = new LightningBolt(4);
 			levelInteractingPieces.add((GamePiece)levelGameBoard[4]);
 			levelMovingPieces.add((Moveable)levelGameBoard[4]);
 			break;
