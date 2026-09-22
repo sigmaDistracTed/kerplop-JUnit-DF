@@ -27,13 +27,13 @@ public class Hunter extends GamePiece implements Moveable {
 	public void move(Drawable[] gameBoard, int playerLocation) {
 		//Hunter cannot move past rocks, and hunter moves towards player
 		if (playerLocation > this.getLocation()) {
-			if (this.getLocation() < gameBoard.length && !(gameBoard[this.getLocation() +1] instanceof Rock)) {
+			if (this.getLocation() < gameBoard.length && (gameBoard[this.getLocation() +1] == null)) {
 				this.setLocation(this.getLocation()+1);
 			}
 			
 		}
 		else if (playerLocation < super.getLocation()) {
-			if (getLocation() > 0 && !(gameBoard[this.getLocation() -1] instanceof Rock)) {
+			if (getLocation() > 0 && (gameBoard[this.getLocation() -1] == null)) {
 				setLocation(this.getLocation()-1);
 			}
 		}
