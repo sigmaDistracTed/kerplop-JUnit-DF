@@ -57,9 +57,24 @@ public class LevelSetup {
 			
 			// example to do the above:
 			createPiece(new Rock(3));
-			createPiece(new LightningBolt(6));
+			createPiece(new Trophy(10));
+			createPiece(new Hunter(9));
+			createPiece(new Apple(2));
+			createPiece(new Apple(13));
+			createPiece(new Spikes(4));
+			
 			break;
 		case 2:
+			levelGameBoard = new Drawable[GameEngine.BOARD_SIZE];
+			levelInteractingPieces = new ArrayList<GamePiece>();
+			levelMovingPieces = new ArrayList<Moveable>();
+			createPiece(new Apple(4));
+			createPiece(new Apple(18));
+			createPiece(new Spikes(8));
+			createPiece(new LightningBolt(7));
+			createPiece(new Hole(10));
+			createPiece(new Hunter(0));
+			
 			break;
 		default:
 			System.out.println("Invalid level number " + levelnum + ".");
