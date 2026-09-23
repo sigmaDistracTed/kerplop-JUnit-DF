@@ -1,0 +1,8 @@
+Rock: Implements drawable, doesn't interact or move. 
+Hunter: Implements drawable and moveable, is a game piece, and goes after the player. The hunter moves closer to the player by 1, but
+cannot move past rocks. 
+Apple: Extends gamePiece, gives a point when landed on 
+Spikes: Hurts you when landed on 
+Trophy: Automatically advances you 
+Hole: Kills you when landed on 
+Lightning Bolt: Teleports across the board and kills player if it lands in range
