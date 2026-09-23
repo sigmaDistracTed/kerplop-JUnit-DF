@@ -7,7 +7,7 @@ public class Hunter extends GamePiece implements Moveable {
 
 	
 	public Hunter(int location)  {
-		super('H', "Can deal damage to player when on the same tile.", location);
+		super('H', "Hunter (Can deal damage to player when on the same tile.)", location);
 		
 		
 	}

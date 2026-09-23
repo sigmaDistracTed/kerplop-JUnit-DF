@@ -5,7 +5,7 @@ import gameEngine.InteractionResult;
 
 public class Spikes extends GamePiece{
 	public Spikes(int location) {
-		super('*', "Hurts you when you stand on it", location);
+		super('*', "Spikes (Hurts you when you stand on it)", location);
 	}
 	
 	@Override

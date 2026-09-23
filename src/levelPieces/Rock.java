@@ -11,6 +11,10 @@ public class Rock implements Drawable {
 		this.location = location;
 	}
 	
+	public int getLocation() {
+		return this.location;
+	}
+	
 	
 	@Override
 	public void draw() {
@@ -19,6 +23,6 @@ public class Rock implements Drawable {
 	
 	@Override
 	public String toString() {
-		return this.symbol + " - Does nothing";
+		return this.symbol + " - Rock (Does nothing)";
 	}
 }

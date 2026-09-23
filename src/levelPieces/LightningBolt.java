@@ -5,7 +5,7 @@ import gameEngine.Moveable;
 
 public class LightningBolt extends GamePiece implements Moveable{
 	public LightningBolt(int location)  {
-		super('!', "Kills you if it lands nearby.", location);
+		super('!', "Lightning Bolt (Kills you if it lands nearby.)", location);
 		
 		
 	}

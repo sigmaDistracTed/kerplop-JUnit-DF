@@ -5,7 +5,7 @@ import gameEngine.InteractionResult;
 
 public class Hole extends GamePiece {
 	public Hole(int location) {
-		super('O', "Kills you when you stand on it", location);
+		super('O', "Hole (Kills you when you stand on it)", location);
 	}
 	
 	@Override

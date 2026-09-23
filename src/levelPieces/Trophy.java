@@ -5,7 +5,7 @@ import gameEngine.InteractionResult;
 
 public class Trophy extends GamePiece {
 	public Trophy(int location) {
-		super('T', "Advances you to the next level!", location);
+		super('T', "Trophy (Advances you to the next level!)", location);
 	}
 	
 	@Override

@@ -6,7 +6,7 @@ import gameEngine.InteractionResult;
 public class Apple extends GamePiece{
 	
 	public Apple(int location) {
-		super('A', "Eat the apples to gain points!", location);
+		super('A', "Apple (Eat the apples to gain points!)", location);
 	}
 	
 	@Override
